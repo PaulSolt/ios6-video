@@ -12,6 +12,7 @@
 		BD065DAD22D6457E00CCD627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD065DAB22D6457E00CCD627 /* Main.storyboard */; };
 		BD065DAF22D6457F00CCD627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD065DAE22D6457F00CCD627 /* Assets.xcassets */; };
 		BD065DB222D6457F00CCD627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD065DB022D6457F00CCD627 /* LaunchScreen.storyboard */; };
+		BD065DBA22D647B300CCD627 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD065DB922D647B300CCD627 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BD065DAE22D6457F00CCD627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD065DB122D6457F00CCD627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD065DB322D6457F00CCD627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD065DB922D647B300CCD627 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				BD065DA722D6457E00CCD627 /* AppDelegate.swift */,
 				BD065DA922D6457E00CCD627 /* ViewController.swift */,
+				BD065DB922D647B300CCD627 /* CameraViewController.swift */,
 				BD065DAB22D6457E00CCD627 /* Main.storyboard */,
 				BD065DAE22D6457F00CCD627 /* Assets.xcassets */,
 				BD065DB022D6457F00CCD627 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				BD065DAA22D6457E00CCD627 /* ViewController.swift in Sources */,
 				BD065DA822D6457E00CCD627 /* AppDelegate.swift in Sources */,
+				BD065DBA22D647B300CCD627 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
