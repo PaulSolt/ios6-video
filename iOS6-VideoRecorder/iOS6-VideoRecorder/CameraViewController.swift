@@ -32,6 +32,18 @@ class CameraViewController: UIViewController {
             captureSession.addInput(cameraInput)
         }
         
+        guard let microphone = AVCaptureDevice.default(for: .audio) else {
+            fatalError("Can't find microphone")
+        }
+        
+        guard let microphoneInput = try? AVCaptureDeviceInput(device: microphone) else {
+            fatalError("Can't create input from microphone")
+        }
+        
+        if captureSession.canAddInput(microphoneInput) {
+            captureSession.addInput(microphoneInput)
+        }
+        
         
         // Setup outputs
         if captureSession.canAddOutput(fileOutput) {
