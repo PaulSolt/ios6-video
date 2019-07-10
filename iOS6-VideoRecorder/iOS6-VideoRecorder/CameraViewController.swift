@@ -11,4 +11,13 @@ import UIKit
 
 class CameraViewController: UIViewController {
     
+    @IBOutlet var recordButton: UIButton!
+    @IBOutlet var cameraView: CameraPreviewView!
+    
+    
+    
+    @IBAction func recordButtonPressed(_ sender: Any) {
+        print("Record")
+        
+    }
 }
