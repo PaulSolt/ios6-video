@@ -46,6 +46,18 @@ class CameraViewController: UIViewController {
         
         cameraView.session = captureSession
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(_:)))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func handleTapGesture(_ tapGesture: UITapGestureRecognizer) {
+        // play the movie
+        print("Play movie")
+        if let player = player {
+            player.seek(to: CMTime.zero)
+            player.play()
+        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -99,6 +111,8 @@ class CameraViewController: UIViewController {
         var topRect = self.view.bounds
         topRect.size.width = topRect.width / 4
         topRect.size.height = topRect.height / 4
+        topRect.origin.y = view.layoutMargins.top
+        
         playerLayer.frame = topRect
         
         view.layer.addSublayer(playerLayer)
